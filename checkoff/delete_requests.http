@@ -1,0 +1,2 @@
+### Delete user based on specified user id
+DELETE http://127.0.0.1:8000/users/219921 HTTP/1.1

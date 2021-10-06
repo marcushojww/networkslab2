@@ -1,0 +1,23 @@
+### Get homepage
+GET http://127.0.0.1:8000 HTTP/1.1
+
+### Get all users
+GET http://127.0.0.1:8000/users HTTP/1.1
+
+### Get users sorted by height
+GET http://127.0.0.1:8000/users?sortBy=height_in_cm HTTP/1.1
+
+### Get users with limit 3
+GET http://127.0.0.1:8000/users?count=3 HTTP/1.1
+
+### Get users with offset 2
+GET http://127.0.0.1:8000/users?offset=2 HTTP/1.1
+
+### Get users sorted by name, count and offset
+GET http://127.0.0.1:8000/users?sortBy=height_in_cm&count=2&offset=1 HTTP/1.1
+
+### Get all user ids
+GET http://127.0.0.1:8000/ids HTTP/1.1
+
+### Get user based on specified user id
+GET http://127.0.0.1:8000/users/200569 HTTP/1.1

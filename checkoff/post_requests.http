@@ -1,0 +1,103 @@
+### Create male Marcus user
+POST http://127.0.0.1:8000/users HTTP/1.1
+Content-Type: application/json
+password: 123
+
+{
+    "name": "Marcus",
+    "id": 0,
+    "gender": "M",
+    "height_in_cm": 180,
+    "looking_for": "F",
+    "bio": "Last time I was someone's type, I was donated blood."
+}
+### Create male Justin user
+POST http://127.0.0.1:8000/users HTTP/1.1
+Content-Type: application/json
+password: 123
+
+{
+    "name": "Justin",
+    "id": 1,
+    "gender": "M",
+    "height_in_cm": 182,
+    "looking_for": "F",
+    "bio": "Here for a good time, not a long time."
+}
+### Create male Victor user
+POST http://127.0.0.1:8000/users HTTP/1.1
+Content-Type: application/json
+password: 123
+
+{
+    "name": "Victor",
+    "id": 2,
+    "gender": "M",
+    "height_in_cm": 175,
+    "looking_for": "F",
+    "bio": "I'm Marcus's dad lol."
+}
+### Create female Yong Qing user
+POST http://127.0.0.1:8000/users HTTP/1.1
+Content-Type: application/json
+password: 123
+
+{
+    "name": "Yong Qing",
+    "id": 3,
+    "gender": "F",
+    "height_in_cm": 162,
+    "looking_for": "M",
+    "bio": "Current relationship status: Made dinner for two. Ate both."
+}
+### Create female Alice user
+POST http://127.0.0.1:8000/users HTTP/1.1
+Content-Type: application/json
+password: 123
+
+{
+    "name": "Alice Cheng",
+    "id": 4,
+    "gender": "F",
+    "height_in_cm": 159,
+    "looking_for": "M",
+    "bio": "I'm Marcus's mom. Just here to expose my son."
+}
+### Create dog user
+POST http://127.0.0.1:8000/users HTTP/1.1
+Content-Type: application/json
+password: 123
+
+{
+    "name": "Mocha",
+    "id": 5,
+    "gender": "M",
+    "height_in_cm": 101,
+    "looking_for": "F",
+    "bio": "Will do anything for treats."
+}
+### Create user with wrong password
+POST http://127.0.0.1:8000/users HTTP/1.1
+Content-Type: application/json
+password: 456
+
+{
+    "name": "Dummy",
+    "id": 6,
+    "gender": "M",
+    "height_in_cm": 158,
+    "looking_for": "F",
+    "bio": "I'm not supposed to be here"
+}
+### Create user with missing fields
+POST http://127.0.0.1:8000/users HTTP/1.1
+Content-Type: application/json
+password: 123
+
+{
+    "name": "Dummy",
+    "id": 7,
+    "height_in_cm": 158,
+    "looking_for": "F",
+    "bio": "I'm not supposed to be here"
+}
